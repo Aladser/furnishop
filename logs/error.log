@@ -1,0 +1,1 @@
+[Mon Mar 11 09:24:19.547924 2024] [php:error] [pid 14959] [client 192.168.48.134:33350] script '/var/www/bitrix-test/bitrix_htaccess_test/test_file.php' not found or unable to stat
