@@ -58,9 +58,10 @@ else:
 
 <!-- БЛОК АВТ.ПОЛЬЗОВАТЕЛЯ -->
 <form action="<?=$arResult["AUTH_URL"]?>">		
-	<span class="hd_sing" style="display:inline-block; margin-bottom:0.5em"><?=$arResult["USER_NAME"]?> [<?=$arResult["USER_LOGIN"]?>]</span>
-	<br>
-	<a href="<?=$arResult["PROFILE_URL"]?>" style='display:inline-block; margin-right: 0.25em;'> <?=GetMessage("AUTH_PROFILE")?> </a>
+	<span class="hd_sing" style="display:inline-block; margin-bottom:0.5em">
+		<?=$arResult["USER_NAME"]?> 
+		<a href="<?=$arResult["PROFILE_URL"]?>" style='display:inline-block; margin-right: 0.25em;'> [<?=$arResult["USER_LOGIN"]?>] </a>
+	</span>
 	<?foreach ($arResult["GET"] as $key => $value):?>
 		<input type="hidden" name="<?=$key?>" value="<?=$value?>" />
 	<?endforeach?>
