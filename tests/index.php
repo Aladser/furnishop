@@ -40,11 +40,13 @@ $APPLICATION->SetTitle("Тесты");
 <ul>
 	<li>Авторизация</li>
 </ul>
- <?$APPLICATION->IncludeComponent("bitrix:system.auth.form", "auth_my1", Array(
-	"FORGOT_PASSWORD_URL" => "/user/",	// Страница забытого пароля
-		"PROFILE_URL" => "/user/profile.php",	// Страница профиля
-		"REGISTER_URL" => "/user/register.php",	// Страница регистрации
-		"SHOW_ERRORS" => "N",	// Показывать ошибки
-	),
-	false
+ <?$APPLICATION->IncludeComponent(
+	"bitrix:system.auth.form",
+	"",
+	Array(
+		"FORGOT_PASSWORD_URL" => "",
+		"PROFILE_URL" => "/user/profile.php",
+		"REGISTER_URL" => "",
+		"SHOW_ERRORS" => "N"
+	)
 );?><br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
