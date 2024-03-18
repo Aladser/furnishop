@@ -28,9 +28,17 @@ IncludeTemplateLangFile(__FILE__);
 				<table>
 					<tr>
 						<td rowspan="2" class="hd_companyname">
-							<h1>
-							Мебельный магазин
-							</h1>
+							<!-- лого -->
+							<?$APPLICATION->IncludeComponent(
+								"bitrix:main.include",
+								"",
+								Array(
+									"AREA_FILE_SHOW" => "file",
+									"AREA_FILE_SUFFIX" => "inc",
+									"EDIT_TEMPLATE" => "",
+									"PATH" => "/include/company_name.php"
+								)
+							);?>
 						</td>
 						<td rowspan="2" class="hd_txarea">
 							<span class="tel">8 (495) 212-85-06</span>	<br/>	
