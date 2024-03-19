@@ -1,4 +1,3 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <?
 $aMenuLinks = Array(
 	Array(
@@ -32,6 +31,13 @@ $aMenuLinks = Array(
 	Array(
 		"Вакансии", 
 		"vacancies.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Тест", 
+		"test.php", 
 		Array(), 
 		Array(), 
 		"" 

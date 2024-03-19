@@ -1,6 +1,7 @@
 </div>
 				</div>
 				<div class="sb_sidebar">
+					<!-- левое меню -->
 					<div class="sb_nav">
 						<ul>
 							<li class="close"><a href=""><span>Каталог</span></a></li>
@@ -28,17 +29,20 @@
 							</li>
 						</ul>
 					</div>
+					<!-- события -->
 					<div class="sb_event">
 						<div class="sb_event_header"><h4>Ближайшие события</h4></div>
 						<p><a href="">29 августа 2012, Москва</a></p>
 						<p>Семинар производителей мебели России и СНГ, Обсуждение тенденций.</p>
 					</div>
+					<!-- акции -->
 					<div class="sb_action">
 						<a href=""><img src="/bitrix/templates/.default/content/11.png" alt=""/></a>
 						<h4>Акция</h4>
 						<h5><a href="">Мебельная полка всего за 560 Р/a></h5>
 						<a href="" class="sb_action_more">Подробнее &rarr;</a>
 					</div>
+					<!-- отзывы -->
 					<div class="sb_reviewed">
 							<img src="/bitrix/templates/.default/content/8.png" class="sb_rw_avatar" alt=""/>
 							<span class="sb_rw_name">Сергей Антонов</span>
