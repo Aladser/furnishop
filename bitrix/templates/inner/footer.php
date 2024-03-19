@@ -3,23 +3,25 @@
 				<div class="sb_sidebar">
 					<!-- левое меню -->
 					<?$APPLICATION->IncludeComponent(
-						"bitrix:menu",
-						"catalog_vertical_my1",
-						Array(
-							"ALLOW_MULTI_SELECT" => "N",
-							"CHILD_MENU_TYPE" => "left",
-							"COMPONENT_TEMPLATE" => "catalog_vertical",
-							"DELAY" => "N",
-							"MAX_LEVEL" => "1",
-							"MENU_CACHE_GET_VARS" => "",
-							"MENU_CACHE_TIME" => "3600",
-							"MENU_CACHE_TYPE" => "N",
-							"MENU_CACHE_USE_GROUPS" => "Y",
-							"MENU_THEME" => "site",
-							"ROOT_MENU_TYPE" => "left",
-							"USE_EXT" => "N"
-						)
-					);?>
+	"bitrix:menu", 
+	"catalog_vertical_my1", 
+	array(
+		"ALLOW_MULTI_SELECT" => "N",
+		"CHILD_MENU_TYPE" => "left",
+		"COMPONENT_TEMPLATE" => "catalog_vertical_my1",
+		"DELAY" => "N",
+		"MAX_LEVEL" => "1",
+		"MENU_CACHE_GET_VARS" => array(
+		),
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_TYPE" => "N",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"MENU_THEME" => "site",
+		"ROOT_MENU_TYPE" => "left",
+		"USE_EXT" => "Y"
+	),
+	false
+);?>
 					<!-- события -->
 					<div class="sb_event">
 						<div class="sb_event_header"><h4>Ближайшие события</h4></div>
