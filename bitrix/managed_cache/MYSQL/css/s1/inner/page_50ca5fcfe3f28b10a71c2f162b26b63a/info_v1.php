@@ -1,1 +1,0 @@
-<?php $filesInfo = ["/bitrix/templates/.default/components/bitrix/system.auth.form/auth_my2/style.css" => "1710466758424",]; ?>
