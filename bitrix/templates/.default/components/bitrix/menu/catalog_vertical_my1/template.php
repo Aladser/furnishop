@@ -14,7 +14,12 @@ $menuBlockId = "catalog_menu_".$this->randString();
 <div class="sb_nav">
 	<ul>
 		<?foreach($arResult["ALL_ITEMS"] as $arItem):?>
-			<li class="close"><a href="<?=$arItem['LINK']?>"><span><?=$arItem['TEXT']?></span></a></li>
+			<? if($arItem['LINK'] == $_SERVER['REQUEST_URI']): ?>
+				<li class="close" style='font-weight: 600'>
+			<? else: ?>
+				<li class="close">
+			<? endif ?>
+			<a href="<?=$arItem['LINK']?>"><span><?=$arItem['TEXT']?></span></a></li>
 		<?endforeach;?>
 	</ul>
 </div>
