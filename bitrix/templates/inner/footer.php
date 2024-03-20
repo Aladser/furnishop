@@ -18,7 +18,7 @@
 		"MENU_CACHE_USE_GROUPS" => "Y",
 		"MENU_THEME" => "site",
 		"ROOT_MENU_TYPE" => "left",
-		"USE_EXT" => "Y"
+		"USE_EXT" => "N"
 	),
 	false
 );?>
@@ -29,12 +29,16 @@
 						<p>Семинар производителей мебели России и СНГ, Обсуждение тенденций.</p>
 					</div>
 					<!-- акции -->
-					<div class="sb_action">
-						<a href=""><img src="/bitrix/templates/.default/content/11.png" alt=""/></a>
-						<h4>Акция</h4>
-						<h5><a href="">Мебельная полка всего за 560 Р/a></h5>
-						<a href="" class="sb_action_more">Подробнее &rarr;</a>
-					</div>
+					<?$APPLICATION->IncludeComponent(
+						"bitrix:main.include",
+						"",
+						Array(
+							"AREA_FILE_SHOW" => "file",
+							"AREA_FILE_SUFFIX" => "inc",
+							"EDIT_TEMPLATE" => "",
+							"PATH" => "/include/promotion.php"
+						)
+					);?>
 					<!-- отзывы -->
 					<div class="sb_reviewed">
 							<img src="/bitrix/templates/.default/content/8.png" class="sb_rw_avatar" alt=""/>

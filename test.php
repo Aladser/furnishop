@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Область тестирования");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
-	"reviews_list", 
+	"promotions_list", 
 	array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
@@ -30,12 +30,12 @@ $APPLICATION->SetTitle("Область тестирования");
 		),
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "6",
-		"IBLOCK_TYPE" => "reviews",
+		"IBLOCK_ID" => "7",
+		"IBLOCK_TYPE" => "promotions",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"MESSAGE_404" => "",
-		"NEWS_COUNT" => "10",
+		"NEWS_COUNT" => "20",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -47,9 +47,8 @@ $APPLICATION->SetTitle("Область тестирования");
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"PROPERTY_CODE" => array(
-			0 => "ROLE",
-			1 => "COMPANY",
-			2 => "",
+			0 => "PRICE",
+			1 => "",
 		),
 		"SET_BROWSER_TITLE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
@@ -63,7 +62,7 @@ $APPLICATION->SetTitle("Область тестирования");
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",
 		"STRICT_SECTION_CHECK" => "N",
-		"COMPONENT_TEMPLATE" => "reviews_list"
+		"COMPONENT_TEMPLATE" => "promotions_list"
 	),
 	false
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
