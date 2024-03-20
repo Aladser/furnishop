@@ -3,25 +3,25 @@
 				<div class="sb_sidebar">
 					<!-- левое меню -->
 					<?$APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"catalog_vertical_my1", 
-	array(
-		"ALLOW_MULTI_SELECT" => "N",
-		"CHILD_MENU_TYPE" => "left",
-		"COMPONENT_TEMPLATE" => "catalog_vertical_my1",
-		"DELAY" => "N",
-		"MAX_LEVEL" => "1",
-		"MENU_CACHE_GET_VARS" => array(
-		),
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_TYPE" => "N",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"MENU_THEME" => "site",
-		"ROOT_MENU_TYPE" => "left",
-		"USE_EXT" => "N"
-	),
-	false
-);?>
+						"bitrix:menu", 
+						"catalog_vertical_my1", 
+						array(
+							"ALLOW_MULTI_SELECT" => "N",
+							"CHILD_MENU_TYPE" => "left",
+							"COMPONENT_TEMPLATE" => "catalog_vertical_my1",
+							"DELAY" => "N",
+							"MAX_LEVEL" => "1",
+							"MENU_CACHE_GET_VARS" => array(
+							),
+							"MENU_CACHE_TIME" => "3600",
+							"MENU_CACHE_TYPE" => "N",
+							"MENU_CACHE_USE_GROUPS" => "Y",
+							"MENU_THEME" => "site",
+							"ROOT_MENU_TYPE" => "left",
+							"USE_EXT" => "N"
+						),
+						false
+					);?>
 					<!-- события -->
 					<div class="sb_event">
 						<div class="sb_event_header"><h4>Ближайшие события</h4></div>
@@ -41,12 +41,12 @@
 					);?>
 					<!-- отзывы -->
 					<div class="sb_reviewed">
-							<img src="/bitrix/templates/.default/content/8.png" class="sb_rw_avatar" alt=""/>
-							<span class="sb_rw_name">Сергей Антонов</span>
-							<span class="sb_rw_job">Руководитель финансового отдела “Банк+”</span>
-							<p>“Покупал офисные стулья и столы, остался очень доволен! Низкие цены, быстрая доставка, обслуживание на высоте! Спасибо!”</p>
-							<div class="clearboth"></div>
-							<div class="sb_rw_arrow"></div>
+						<img src="/bitrix/templates/.default/content/8.png" class="sb_rw_avatar" alt=""/>
+						<span class="sb_rw_name">Сергей Антонов</span>
+						<span class="sb_rw_job">Руководитель финансового отдела “Банк+”</span>
+						<p>“Покупал офисные стулья и столы, остался очень доволен! Низкие цены, быстрая доставка, обслуживание на высоте! Спасибо!”</p>
+						<div class="clearboth"></div>
+						<div class="sb_rw_arrow"></div>
 					</div>
 				</div>
 				<div class="clearboth"></div>
