@@ -18,7 +18,7 @@ if ($arResult['SHOW_ERRORS'] === 'Y' && $arResult['ERROR'] && !empty($arResult['
 		<span class="hd_title_loginform">Войти на сайт</span>
 
 <form name="system_auth_form<?=$arResult["RND"]?>" method="post" target="_top" action="<?=$arResult["AUTH_URL"]?>">
-`	<?if($arResult["BACKURL"] <> ''):?>
+	<?if($arResult["BACKURL"] <> ''):?>
 		<input type="hidden" name="backurl" value="<?=$arResult["BACKURL"]?>" />
 	<?endif?>
 	<?foreach ($arResult["POST"] as $key => $value):?>
