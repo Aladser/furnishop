@@ -55,19 +55,18 @@ IncludeTemplateLangFile(__FILE__);
 					</tr>
 					<tr>
 						<td style="padding-top: 11px;">
-						<!-- форма авторизации -->
 						<?$APPLICATION->IncludeComponent(
-							"bitrix:system.auth.form", 
-							"auth_my1", 
-							array(
-								"COMPONENT_TEMPLATE" => "auth_my1",
-								"FORGOT_PASSWORD_URL" => "/user/",
-								"PROFILE_URL" => "/user/profile.php",
-								"REGISTER_URL" => "/user/register.php",
-								"SHOW_ERRORS" => "N"
-							),
-							false
-						);?>
+	"bitrix:system.auth.form", 
+	"auth_my1", 
+	array(
+		"COMPONENT_TEMPLATE" => "auth_my1",
+		"FORGOT_PASSWORD_URL" => "/user/",
+		"PROFILE_URL" => "/user/profile.php",
+		"REGISTER_URL" => "/user/register.php",
+		"SHOW_ERRORS" => "N"
+	),
+	false
+);?>
 						</td>
 					</tr>
 				</table>
