@@ -1,3 +1,4 @@
 logs/
 bitrix/cache/
 bitrix/managed_cache/
+upload/tmp/

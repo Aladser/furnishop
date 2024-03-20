@@ -16,22 +16,6 @@ $this->setFrameMode(true);
 
 
 
-<!--
-$arItem['NAME']
-$arItem['PREVIEW_TEXT']
-$arItem['PROPERTIES']['ROLE']['VALUE']
-$arItem['PROPERTIES']['COMPANY']['VALUE']
-<li>
-	<div class="rw_message">
-		<img src="/bitrix/templates/.default/content/8.png" class="rw_avatar" alt=""/>
-		<span class="rw_name">Дмитрий Иванов</span>
-		<span class="rw_job">Руководитель финансового отдела “Банк+”</span>
-		<p>“В магзине предоставили потрясающий выбор расцветок, а также, получил большую скидку по карте постоянного клиента.”</p>
-		<div class="clearboth"></div>
-		<div class="rw_arrow"></div>
-	</div>
-</li>
--->
 <script type="text/javascript" >
 	$(document).ready(function(){
 	
@@ -53,9 +37,9 @@ $arItem['PROPERTIES']['COMPANY']['VALUE']
 			<? foreach($arResult["ITEMS"] as $arItem):?>
 				<li>
 				<div class="rw_message">
-					<img src="/bitrix/templates/.default/content/8.png" class="rw_avatar" alt=""/>
+					<img src="<?=$arItem['PREVIEW_PICTURE']['SRC']?>" class="rw_avatar" alt=""/>
 					<span class="rw_name"><?=$arItem['NAME']?></span>
-					<span class="rw_job"><?= $arItem['PROPERTIES']['ROLE']['VALUE'].', '.$arItem['PROPERTIES']['COMPANY']['VALUE'] ?></span>
+					<span class="rw_job"><?= $arItem['PROPERTIES']['PROFESSION']['VALUE'].', '.$arItem['PROPERTIES']['LOCATION']['VALUE'] ?></span>
 					<p>“<?=$arItem['PREVIEW_TEXT']?>”</p>
 					<div class="clearboth"></div>
 					<div class="rw_arrow"></div>
@@ -65,6 +49,5 @@ $arItem['PROPERTIES']['COMPANY']['VALUE']
 		</ul>
 		<div id="rwprev"></div>
 		<div id="rwnext"></div>
-		<a href="" class="rw_allreviewed">Все отзывы</a>
 	</div>
 </div>
