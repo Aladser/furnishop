@@ -18,6 +18,6 @@ $this->setFrameMode(true);
 		<a href=""><img src="<?=$arItem['PREVIEW_PICTURE']['SRC']?>" alt=""></a>
 		<h4>Акция</h4>
 		<h5><a href=""><?=$arItem['PREVIEW_TEXT']?><br><span><em>Цена:<?=$arItem['PROPERTIES']['PRICE']['VALUE']?></span></a></h5><a href="">
-		</a><a href="" class="sb_action_more">Подробнее →</a>
+		</a><a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="sb_action_more">Подробнее →</a>
 	</div>
 <?endforeach?>
