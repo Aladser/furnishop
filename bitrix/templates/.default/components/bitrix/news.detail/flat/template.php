@@ -17,6 +17,7 @@ $this->addExternalCss($this->GetFolder().'/themes/'.$arParams['TEMPLATE_THEME'].
 CUtil::InitJSCore(['fx', 'ui.fonts.opensans']);
 ?>
 
+
 <div class="bx-newsdetail">
 	<div class="bx-newsdetail-block" id="<?echo $this->GetEditAreaId($arResult['ID'])?>">
 
