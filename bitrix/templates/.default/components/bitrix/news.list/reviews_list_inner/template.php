@@ -13,9 +13,6 @@
 $this->setFrameMode(true);
 ?>
 
-
-
-
 <script type="text/javascript" >
 	$(document).ready(function(){
 	
